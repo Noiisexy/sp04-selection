@@ -21,3 +21,12 @@ You are making a weather app that gives clothing advice.
 3. If it's between 40 and 65, print "Wear a jacket."
 4. If it's above 65, print "You're good in a t-shirt!"
 '''
+temperature = int(input("What is the temperature outside? F")) # get a value of the temperature outside from the user
+if temperature < 40 :  # if the temperature is below 40 degree
+    print("Wear a coat.") # print the recommendation
+elif temperature >= 40 and 65 >= temperature : # if the temperature is between 40 and 65
+    print("Wear a jacket.") # print the recommendation
+elif temperature > 65 : # if the temerature is above 65
+    print("You're good in a t-shirt!") # print the recommendation
+else:
+    print("Sorry, we do not have data for the temperature.") # display the error message

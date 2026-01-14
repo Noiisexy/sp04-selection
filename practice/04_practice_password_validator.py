@@ -20,3 +20,8 @@ You are building a simple login gate that rejects banned passwords.
 2. If the password is NOT "1234" or "password", print "Access granted."
 3. Otherwise, print "That password is not allowed."
 '''
+password_input = input("Enter a password: ") # get a value of the password
+if password_input == 1234 or password_input == "password": # two passwords are not available
+    print("That password is not allowed.") # deny access
+else:
+    print("Access granted.") # other passwords are accepted

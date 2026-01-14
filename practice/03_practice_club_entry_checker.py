@@ -22,3 +22,11 @@ and be on the guest list to get in.
 3. If both answers are yes, print "Welcome in!"
 4. Otherwise, print "Sorry, you can't come in."
 '''
+ID_validation = input("Do you have a student ID? (yes/no) ").lower() # Validate ID
+Guest_validation = input("Are you on the guest list? (yes/no) ").lower() # Valide guest list
+if ID_validation and Guest_validation == "yes": # If the person meet two conditions
+    print("Welcome in!") # accept
+elif ID_validation or Guest_validation == "no": # If the person doesn't meet one condition
+    print("Sorry, you can't come in.") # deny
+else:
+    print("Type the appropriate answer.") # error message display

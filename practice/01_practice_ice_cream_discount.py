@@ -20,3 +20,9 @@ You're working at the BYU Creamery and need to apply a student discount.
 2. If they are a student, print "You get a discount!"
 3. Otherwise, print "No discount available."
 '''
+student_validation = input("Are you a student of BYU? (yes/no) ").lower() # validate the student status
+if student_validation == "yes": # if the person is a student of BYU
+    print("You get a discount!") # give discount
+elif student_validation == "no": # if the person is not a student of BYU
+    print("No discount available") # deny discount
+else: print("unvalid answer") # Any other invalid answers
